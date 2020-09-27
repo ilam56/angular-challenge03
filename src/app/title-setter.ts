@@ -1,9 +1,9 @@
 import { Title } from '@angular/platform-browser';
 
 export class TitleSetter {
-  constructor(private titleService: Title) {}
+  public constructor(private titleService: Title) {}
 
-  setTitle(title: string) {
+  public setTitle(title: string) {
      this.titleService.setTitle(title);
   }
 }

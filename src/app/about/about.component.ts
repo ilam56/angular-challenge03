@@ -8,14 +8,14 @@ import { Title } from '@angular/platform-browser';
 })
 export class AboutComponent implements OnInit {
 
-  public constructor(private titleService: Title ) { }
+  constructor(private titleService: Title ) { }
 
-  public setTitle( newTitle: string) {
+  setTitle( newTitle: string) {
     this.titleService.setTitle( newTitle );
   }
 
   ngOnInit() {
-    this.setTitle("about");
+    this.setTitle("History-Based Navigation - About");
   }
 
 }
